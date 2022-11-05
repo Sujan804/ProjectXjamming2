@@ -40,7 +40,11 @@
     border: 0.5px solid white;
     color: white;
 }
-
+.drower-btn{
+    display: none;
+    background-color: transparent;
+    border: none;
+}
 .menu li {
     margin-right: 16px;
 }
@@ -52,7 +56,7 @@
     align-items: center;
 }
 
-.left p {
+.hero-section .left p {
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -200,4 +204,111 @@
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.100345);
     border-radius: 3px;
     color: #BE6361;
+}
+
+.section-3 button {
+    margin: 20px;
+}
+
+.section-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.section-4 h3 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #BE6361;
+}
+
+.section-4 h1 {
+    font-family: 'Alfa Slab One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    margin: 20px 0px;
+
+}
+
+.section-4 p {
+    color: #333333;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+.section-4 button{
+    height: 48px;
+    width: 170px;
+    margin: 20px 0px;
+    background-color:  #F2F2F2;
+    color: #BE6361;
+    border: 1px solid #BE6361;
+}
+.left-{
+    display: none;
+}
+
+/* Responsive part */
+@media only screen and (max-width: 800px) {
+    .section-banner, .section-2, .section-3, .section-4{
+        display: flex;
+        padding: 10px 0px;
+        flex-direction: column;
+        text-align: left;
+    }
+    .section-3{
+        padding: 20px 10px;
+    }
+    .left span{
+        font-size: 40px;
+       text-align: left;
+    }
+    .menu{
+        display: none;
+    }
+    .signup-btn{
+        display: none;
+    }
+    .cards{
+        flex-direction: column;
+        text-align: center;
+        margin: 0px 10px;
+    }
+    .drower-btn{
+        display: block;
+    }
+    .header{
+        justify-content: space-between;
+        padding: 0px 10px;
+        font-size: 60px;
+        text-align: left;
+        padding: 10px;
+    }
+    .banner-input{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hero-section .right img{
+        width: 100%;
+    }
+    .section-2 .left img{
+        width: 100%;
+    }
+    .section-4 .right img{
+        width: 100%;
+    }
+    .cards{
+        width: 100%;
+    }
 }
